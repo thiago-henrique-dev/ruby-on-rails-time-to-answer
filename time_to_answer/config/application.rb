@@ -30,5 +30,7 @@ module TimeToAnswer
     # the framework and any gems in your application.
 
     config.generators.system_tests = nil
+    # All Web Console from Vagrant
+    condig.web_console.whitelisted_ips = '192.168.0.100'
 end
 end
