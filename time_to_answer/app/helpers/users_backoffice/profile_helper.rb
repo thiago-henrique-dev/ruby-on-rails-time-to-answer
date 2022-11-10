@@ -3,3 +3,4 @@ module UsersBackoffice::ProfileHelper
         user.user_profile.gender == current_gender ? 'btn-primary' : 'btn-default'
       end
 end
+    
