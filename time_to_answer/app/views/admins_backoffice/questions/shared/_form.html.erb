@@ -32,8 +32,10 @@
                         
                             <div class="form-group">
                                 <%= form.label :description %>
-                                <%= form.text_area :description, class:"form-control", placeholder:"Descrição da pergunta...", rows: 5  %>
+                                <%= form.hidden_field :description, class:"form-control", placeholder:"Descrição da pergunta...", rows: 5  %>
                             </div>
+
+                            <trix-editor input="question_description"></trix-editor>
 
                             <div class="form-group">
                                 <%= form.label :subject_id %>

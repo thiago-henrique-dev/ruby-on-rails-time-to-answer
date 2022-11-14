@@ -3,7 +3,7 @@
         before_action :get_subjects, only: [:new, :edit]
         def index
             @questions = Question.includes(:subject)
-                         .order(:description)
+                         .order(:id)
                          .page(params[:page])
         end
       
